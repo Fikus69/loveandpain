@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="charpgs\akira ex.png" />
+    <None Remove="charpgs\iori normal.png" />
+    <None Remove="charpgs\izao normal.png" />
+    <None Remove="charpgs\misaki.png" />
+    <None Remove="charpgs\misashi normal.png" />
+    <None Remove="charpgs\yukiro normal.png" />
+    <None Remove="resoures\dyadya grishya.png" />
+    <None Remove="resoures\izao smile.png" />
+    <None Remove="resoures\sakura_tree.png" />
+    <None Remove="rootspgs\akira sad.png" />
+    <None Remove="rootspgs\iori normal.png" />
+    <None Remove="rootspgs\izao shy.png" />
+    <None Remove="rootspgs\misashi smile.png" />
+    <None Remove="rootspgs\yukiro red.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.4.0" />
+    <PackageReference Include="MySqlConnector" Version="2.3.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="charpgs\akira ex.png" />
+    <Resource Include="charpgs\iori normal.png" />
+    <Resource Include="charpgs\izao normal.png" />
+    <Resource Include="charpgs\misaki.png" />
+    <Resource Include="charpgs\misashi normal.png" />
+    <Resource Include="charpgs\yukiro normal.png" />
+    <Resource Include="resoures\dyadya grishya.png" />
+    <Resource Include="resoures\izao smile.png" />
+    <Resource Include="resoures\sakura_tree.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="rootspgs\akira sad.png" />
+    <Resource Include="rootspgs\iori normal.png" />
+    <Resource Include="rootspgs\izao shy.png" />
+    <Resource Include="rootspgs\misashi smile.png" />
+    <Resource Include="rootspgs\yukiro red.png" />
+  </ItemGroup>
+
+</Project>

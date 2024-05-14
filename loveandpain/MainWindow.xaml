@@ -1,0 +1,41 @@
+﻿<Window x:Class="loveandpain.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:loveandpain"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="PaleVioletRed">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="6"/>
+        </Style>
+    </Window.Resources>
+  
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="6" Grid.Row="3" Content="Персонажи" Click="Char_win"/>
+        <Button Grid.Row="3" Content="Интересные факты" Click="Fact_win"/>
+        <Button Grid.Column="6" Grid.Row="4" Content="Развилки" Click="Roots_win"/>
+        <Button Grid.Row="4" Content="Создатели" Click="Create_win"/>
+        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Content="Добро пожаловать в руководтво по Love And Heart!" HorizontalAlignment="Center"/>
+        <Button Content="Обратная связь" Grid.Row="7" Click="Svaz_click"/>
+        <Frame x:Name="Creators" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="4"/>
+    </Grid>
+</Window>

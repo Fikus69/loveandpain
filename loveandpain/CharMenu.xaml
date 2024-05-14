@@ -1,0 +1,49 @@
+﻿<Window x:Class="loveandpain.CharMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:loveandpain"
+        mc:Ignorable="d"
+        Title="CharMenu" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="6"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+           
+        </Grid.ColumnDefinitions>
+        <Button Content="Изао Акихико" Click="ButtI_win"/>
+        <Button Grid.Column="1" Content="Юкиро Тоору"  Click="ButtY_win"/>
+        <Button Grid.Column="2" Content="Акира Юмено" Click="ButtA_win"/>
+        <Button Grid.Column="3" Content="Иори Морияма" Click="ButtS_win"/>
+        <Button Grid.Column="4" Content="Мисаши Харуно" Click="ButtMSH_win"/>
+        <Button Grid.Column="5" Content="Мисаки Харуно" Click="ButtMSK_win"/>
+        <Frame x:Name="CharPg" Grid.Row="1" Grid.RowSpan="13" Grid.ColumnSpan="6"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="loveandpain.RootMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:loveandpain"
+        mc:Ignorable="d"
+        Title="RootMenu" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="6"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+       
+        <Button Content="Изао" Click="Iroot"/>
+        <Button Grid.Column="2" Content="Юкиро" Click="Yroot"/>
+        <Button Grid.Column="4" Content="Мисаши" Click="Mroot"/>
+        <Button Grid.Column="6" Content="Планируется" Click="Proot"/>
+        <Frame x:Name="RootWin" Grid.Row="1" Grid.RowSpan="13" Grid.ColumnSpan="7"/>
+    </Grid>
+</Window>
